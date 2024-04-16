@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "expr-apop",
+    "slug": "expr-apop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "light",
+    "entryPoint": "./src/index.tsx",
+    "splash": {
+      "image": "./src/assets/images/srklogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.exprapop"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/srklogo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.exprapop",
+      "plugins": [
+        [
+          "expo-screen-orientation",
+          {
+            "initialOrientation": "PORTRAIT_UP"
+          }
+        ]
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5a5f4a9a-6167-465b-acd0-eb8def468bf2"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/5a5f4a9a-6167-465b-acd0-eb8def468bf2"
+    }
+  }
+}
